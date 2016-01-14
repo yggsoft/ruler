@@ -1,8 +1,9 @@
 package com.tdd.ruler;
 
+import static com.tdd.ruler.Ratio.Mile;
+
 public class Mile extends Ruler {
-	private int ratio = 1;
 	public Mile(int value) {
-		super(value);
+		super(value, Ratio.Mile);
 	}
 }

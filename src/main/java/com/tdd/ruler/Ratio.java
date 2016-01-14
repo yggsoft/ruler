@@ -10,7 +10,7 @@ public enum Ratio {
 	}
 
 	public int value() {
-		retun this.radio;
+		return this.radio;
 	}
 
 }

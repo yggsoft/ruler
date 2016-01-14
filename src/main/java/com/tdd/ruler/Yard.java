@@ -1,8 +1,9 @@
 package com.tdd.ruler;
 
-public class Yard extends Ruler {
-	private int ratio = 1760;
+public class Yard extends Ruler {;
+
 	public Yard(int value) {
-		super(value);
+		super(value, Ratio.Yard);
+		;
 	}
 }
