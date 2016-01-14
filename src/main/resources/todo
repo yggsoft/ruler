@@ -1,28 +1,28 @@
-Ruler ����
+Ruler 需求
 
-����һ
-ʵ��һ���⣺ͨ������⣬�û�������MileΪ��λ��ʾһ�����ȣ�����Ϊ1 Mile�����ң����ԶԱ��������ȵ�����ԣ�
+需求一
+实现一个库：通过这个库，用户可以以Mile为单位表示一个长度，精度为1 Mile。并且，可以对比两个长度的相等性：
 3 Mile == 3 Mile
 3 Mile != 2 Mile
 3 Mile != 4 Mile
-�����
-�û����˿���ʹ��MileΪ��λ��ʾ�����⣬������ʹ��YardΪ��λ��ʾ���ȣ����У�
-��MileΪ��λ��ʾ����ʱ������Ϊ1 Mile��
-��YardΪ��λ��ʾ����ʱ������Ϊ1 Yard��
-�ܹ��Ա������������ȵ�����ԣ�
+需求二
+用户除了可以使用Mile为单位表示长度外，还可以使用Yard为单位表示长度，其中：
+以Mile为单位表示长度时，精度为1 Mile。
+以Yard为单位表示长度时，精度为1 Yard。
+能够对比任意两个长度的相等性：
 1 Mile == 1760 Yard
 3 Yard = 3 Yard
 1 Mile != 1761 Yard
 3 Yard != 4 Yard
-������
-���������µĳ��ȵ�λ��Feet��Inch���û�����������Ϊ��λ���ֳ��ȣ����У�
+需求三
+增加两个新的长度单位，Feet和Inch，用户可以以它们为单位表现长度，其中：
 1 Yard == 3 Feet
 1 Feet == 12 Inch
-����FeetΪ��λ��ʾ����ʱ������Ϊ1 Feet
-����InchΪ��λ��ʾ����ʱ������Ϊ1 Inch
-������
-���׿ⷢ�����û�ֻ��ʹ�ü��е�λ��Mile��Yard��Feet��Inch������Ӧ�ô����µĵ�λ���Ա����û�����ĳ��ԭ�򴴽���һЩ��ʵ�в����ڵĵ�λ���Ӷ���ϵͳ��ò������⡣
-������
-�����������ȶ�����Խ��мӷ����㣬���磺
+当用Feet为单位表示长度时，精度为1 Feet
+当用Inch为单位表示长度时，精度为1 Inch
+需求四
+这套库发布后，用户只能使用既有单位（Mile、Yard、Feet和Inch），不应该创建新的单位，以避免用户由于某种原因创建出一些现实中不存在的单位，从而让系统变得不可理解。
+需求五
+任意两个长度对象可以进行加法运算，例如：
 13 Inch + 11 Inch = 2 Feet
 3 Feet + 2 Yard = 3 Yard
