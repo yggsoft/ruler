@@ -1,7 +1,7 @@
 package com.tdd.ruler;
 
 public enum Ratio {
-	Mile(1), Yard(1760);
+	Mile(1), Yard(Mile.value() * 1760), Foot(Yard.value() * 3), Inch(Foot.value() * 12);
 
 	private int radio;
 

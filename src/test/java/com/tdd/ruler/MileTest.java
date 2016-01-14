@@ -11,10 +11,9 @@ public class MileTest {
 		// 3 Mile == 3 Mileprivate Ratio ratio = Ratio.Mile;
 		// 3 Mile != 2 Mile
 		// 3 Mile != 4 Mile
-		Mile threeMile = new Mile(3);
 
-		assertTrue(threeMile.equals(new Mile(3)));
-		assertFalse(threeMile.equals(new Mile(2)));
-		assertFalse(threeMile.equals(new Mile(4)));
+		assertTrue(Ruler.mile(3).equals(Ruler.mile(3)));
+		assertFalse(Ruler.mile(3).equals(Ruler.mile(2)));
+		assertFalse(Ruler.mile(3).equals(Ruler.mile(4)));
 	}
 }
