@@ -24,7 +24,7 @@ public class Ruler {
 	@Override
 	public boolean equals(Object obj) {
 		Ruler r = (Ruler) obj;
-		return this.value * r.ratio.value() == this.ratio.value() * r.value;
+		return this.getValue() * r.ratio.value() == this.ratio.value() * r.getValue();
 	}
 
 	public Ratio getRatio() {
